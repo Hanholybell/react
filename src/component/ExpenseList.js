@@ -14,6 +14,7 @@ const ExpenseList = ({expenses,clearExpense,editExpense,clearItems}) =>{
                       expense={expense} key={expense.id}
                       expenses = {expenses}
                       editExpense = {editExpense}
+                      clearExpense={clearExpense}
                     />
                   )
                 }) }
