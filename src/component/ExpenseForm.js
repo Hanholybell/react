@@ -28,11 +28,13 @@ const ExpenseForm = ({addCharge,charge,addAmount,amount,expenseSubmit,edit}) => 
                 
             </div>
         </div>
-        <BiAngry/>
         <button type="submit" className="btn">
-            {edit?'수정':'제출'}
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>{edit?'수정':'제출'}</p>
         </button>
-        <BiCommentAdd/>
         </form>
     )
 }

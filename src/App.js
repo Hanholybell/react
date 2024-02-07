@@ -85,9 +85,15 @@ const App = () =>{
     }
   
     return(
-      <main className="main-container">
+      <main className="code-container">
         {alert.show?<Alert type={alert.type} text={alert.text} /> : null}
-        <h1>예산계산기</h1>
+        <div class="glow-container">
+    <div class="augs" data-augmented-ui></div>
+  </div>
+  <section class="augs bg" data-augmented-ui>
+    <button class="dots" onclick="" title="change mode"></button>
+    <h1>예산계산기</h1>
+    <div class="code highcontrast-dark">
         <div className="box">
           <ExpenseForm addCharge = {addCharge} 
             charge = {charge}
@@ -106,12 +112,21 @@ const App = () =>{
           />
         </div>
         <div className="box2">
-          <p className="t_price">총지출:<span>{expenses.reduce((acc,curr) =>{
+          <p className="t_price">TOTAL: <span>{expenses.reduce((acc,curr) =>{
             return (acc += curr.amount);
           },0)
           }원</span></p>
 
         </div>
+    </div>
+  </section>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/javascript/javascript.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/css/css.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/addon/scroll/simplescrollbars.min.js'></script><script  src="./script.js"></script>
+
       </main>
     )
 

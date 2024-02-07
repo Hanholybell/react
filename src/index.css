@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Ramche';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Ramche.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 :root{
     --primaryColor: #90A959;
     --secondColor: #72aee9;
@@ -12,9 +18,14 @@
     box-sizing: border-box;
 }
 
-body{
-    background: var(--secondColor);
-    color: var(--mainBlack);
+body {
+    display: grid;
+    min-height: 100vh;
+    width: 100vw;
+    --c: rgb(0 0 0 / 0.95);
+    --bgb: linear-gradient(var(--c), var(--c));
+    --bg: repeating-conic-gradient( from 7.5deg at center center, hsl(200, 100%, 0%) 0deg 15deg, hsl(200, 100%, 60%) 10deg 30deg );
+    background: var(--bgb), var(--bg), black;
 }
 h1{
     margin: 1rem;
@@ -23,8 +34,7 @@ h1{
 
 .btn{
     text-decoration: none;
-    color: var(--mainWhite);
-    background-color: var(--primaryColor);
+    background: initial;
     text-align: center;
     letter-spacing: 0.5px;
     font-size: 14px;
@@ -43,4 +53,11 @@ h1{
 
 .btn:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25) , 0 10px 10px rgba(0,0,0,22);
+}
+h1{
+    font-family: 'Ramche';
+    margin: 11px 0px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
 }

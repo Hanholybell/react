@@ -1,12 +1,19 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 .item{
-    background-color: var(--mainWhite);
     line-height: 1.5rem;
+    height: 45px;
     padding: 10px 20px;
     margin-bottom: 1rem;
     border: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
     transition: all 0.3s linear;
+    border-radius: 10px; 
 }
 
 .item:hover{
@@ -28,16 +35,20 @@
     padding: 1px 3px;
 }
 
-.item .clear-btn, .item .edit-btn{
+.item .clear-btn2, .item .edit-btn2{
+    margin-top: -7px;
     background: none;
     border: none;
     font-size: 1.2rem;
     outline: none;
     cursor: pointer;
 }
-.item .clear-btn{
+.item .clear-btn2{
     color: var(--mainRed);
 }
-.item .edit-btn{
+.item .edit-btn2{
     color: var(--mainGreen);
+}
+p{
+    font-family: 'DungGeunMo';
 }

@@ -22,7 +22,11 @@ const ExpenseList = ({expenses,clearExpense,editExpense,clearItems}) =>{
             </ul>
             {expenses.length > 0 &&(
             <button className='btn' onClick={clearItems}>
-                목록 지우기<BiCommentAdd/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>목록 지우기</p>
             </button>
             )}
         </React.Fragment>

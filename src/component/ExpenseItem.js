@@ -10,13 +10,13 @@ const ExpenseItem = ({expense,clearExpense,editExpense}) => {
       <li className='item'>
         <div className='info'>
             <span className='expense'>{expense.charge}</span>
-            <span className='amount'>{expense.amount}</span>
+            <span className='amount'>₩ {expense.amount}</span>
         </div>
         <div>
-            <button className='edit-btn'
+            <button className='edit-btn2'
                 onClick={()=>editExpense(expense.id)}
             ><BiCommentEdit/></button>
-            <button className='clear-btn' 
+            <button className='clear-btn2' 
                 onClick={()=>clearExpense(expense.id)
               }
               ><BiXCircle/>
